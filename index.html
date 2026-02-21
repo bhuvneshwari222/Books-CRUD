@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books CRUD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background-color: #ededed;
+    }
+    .btn-color{
+        background-color: blueviolet;
+    }
+    .text-blueviolet{
+        color: blueviolet;
+    }
+</style>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="text-warning m-0">Add Book</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="bookForm">
+                            <div class="form-group">
+                                <label for="title">Title<sup class="text-danger">*</sup></label>
+                                <input id="title" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="discription">Description<sup class="text-danger">*</sup></label>
+                                <input id="discription" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="author">Author<sup class="text-danger">*</sup></label>
+                                <input id="author" class="form-control" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="category">Category<sup class="text-danger">*</sup></label>
+                                        <input id="category" class="form-control" required>
+                                    </div> 
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="price">Price<sup class="text-danger">*</sup></label>
+                                        <input id="price" class="form-control" required>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="imgURL">Image URL<sup class="text-danger">*</sup></label>
+                                <input id="imgURL" class="form-control" required>
+                            </div>
+                            <div>
+                                <button id="addBtn" class="btn btn-color text-white btn-block btn-sm"><b>Add Book</b></button>
+                                <button id="updateBtn" class="btn btn-color text-white btn-block btn-sm d-none" type="button"><b>Update Book</b></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" id="bookContainer">
+            <!-- <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text-center">
+                            <h4>Harry Potter and the Sorcerer's Stone</h4>
+                            <h6 class="text-secondary">$499.0</h6>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=400&q=60" alt="Harry Potter and the Sorcerer's Stone" class="img-fluid">
+                    </div>
+                    <div class="card-footer">
+                        <div class="mb-3">
+                            <h5>Author : J.K. Rowling</h5>
+                            <p>The story of a young wizard discovering his magical heritage at Hogwarts School.</p>
+                            <u>Category:</u> <strong class="text-warning">Fantasy</strong>
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-light text-blueviolet">EDIT</button>
+                            <button class="btn btn-outline-light text-danger">DELETE</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
