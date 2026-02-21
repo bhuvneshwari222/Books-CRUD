@@ -150,7 +150,7 @@ function toRemove(eve){
         let getIndex = bookArr.findIndex(t => t.bookID === removeID);
         let removedBook = bookArr.splice(getIndex,1);
         eve.closest('.info').remove();
-        snackbar(`The Book ${removedBook.title} is deleted successfully!!!`)
+        snackbar(`The Book ${removedBook[0].title} is deleted successfully!!!`)
     }
 }
 
